@@ -12,20 +12,22 @@
 <body>
     
     <div id="main">
-        <img src="/images/main.jpg" width=100% position="fixed">
+        <img src="images/main.jpg" width=100% position="fixed">
     </div>
     
     <hr class="style15">
 
+   <!-- Start of thumbnails -->
     
-    <div class="row">
+ <div class="row">
+     
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img src="images/origin.jpg" alt="origin image" id="origin">
       <div class="caption">
         <h3>History of Wine</h3>
         <p>The oldest-known winery was discovered in the "Areni-1" cave in Vayots Dzor, Armenia. Dated to c. 4100 BC, the site contained a wine press, fermentation vats, jars, and cups. Archaeologists also found V. vinifera seeds and vines.</p>
-        <p><a href="#" class="btn btncolor" role="button">Read more ..</a></p>
+        <p><a href="#" class="btn btncolor" role="button" data-toggle="modal" data-target="#historyModal">Read more ..</a></p>
       </div>
     </div>
   </div>
@@ -36,7 +38,7 @@
       <div class="caption">
         <h3>Types of Wine</h3>
         <p>There are different types of wines and wine styles, basically wines are two types white wines which are colourless and red wines which have the color intensity.</p>
-        <p><a href="#" class="btn btncolor" role="button">Read more ..</a></p>
+        <p><a href="#" class="btn btncolor" role="button" data-toggle="modal" data-target="#varietyModal">Read more ..</a></p>
       </div>
     </div>
   </div>
@@ -47,13 +49,90 @@
       <div class="caption">
         <h3>Food and Wine</h3>
         <p>Food & Wine goes way beyond mere eating and drinking.Get a peek into the best pairing comfort foods to your favourite wine.</p>
-        <p><a href="#" class="btn btncolor" role="button">Read more ..</a></p>
+        <p><a href="#" class="btn btncolor" role="button" data-toggle="modal" data-target="#foodModal">Read more ..</a></p>
+      </div>
+    </div>
+  </div>       
+</div> <!--end of row-->
+<!--End of thumbnails-->  
+ 
+<!--START OF MODALS-->   
+    
+    <!-- Start of historyModal -->
+<div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title" id="myModalLabel">History of Wine</h1>
+      </div>
+   <div class="modal-body">
+          
+        <div class="well">
+    <p>The earliest archaeological evidence of wine production yet found has been at sites in Georgia (c. 6000 BC),Iran (c. 5000 BC),Greece (c. 4500 BC) and Armenia (c. 4100 BC),where the oldest winery to date was uncovered.
+</p>
+    <h3>Prehistory</h3>
+    <p>The origins of wine predate written records, and modern archaeology is still uncertain about the details of the first cultivation of wild grapevines. It has been hypothesized that early humans climbed trees to pick berries, liked their sugary flavor, and then begun collecting them. After a few days with fermentation setting in, juice at the bottom of any container would begin producing low-alcohol wine. According to this theory, things changed around 10.000-8000 BC with the transition from a nomadic to a sedentism style of living, which led to agriculture and wine domestication.
+</p>
+    <h3>Oldest Winery Discovered</h3>
+    <p>The oldest-known winery was discovered in the "Areni-1" cave in Vayots Dzor, Armenia. Dated to c. 4100 BC, the site contained a wine press, fermentation vats, jars, and cups.Archaeologists also found V. vinifera seeds and vines. Commenting on the importance of the find, McGovern said, "The fact that winemaking was already so well developed in 4000 BC suggests that the technology probably goes back much earlier."<br>
+    This is what CNN wrote: "Forget France. It turns out, the real birthplace of wine may be in a cave in Armenia.
+    </p>
+     </div>
+  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-        
+</div>
+    <!--End of historyModal -->
+    
+    <!--Start of varietyModal-->
+    
+<div class="modal fade" id="varietyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title" id="myModalLabel">Types of Wine</h1>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
     
+    <!--End of varietyModal-->
+    
+    
+    <!--Start of fodModal-->
+   
+<div class="modal fade" id="foodModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title" id="myModalLabel">Food & Wine</h1>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!--End of foodModal-->
+    
+    
+ <!-- START OF NAVBAR -->
     
     <nav class="navbar navbar-default" id="navbar">
   <div class="container-fluid">
@@ -107,25 +186,17 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>
- <div class="container">   
-<div class="well">
-    <h1>History of Wine</h1>
-    <p>The earliest archaeological evidence of wine production yet found has been at sites in Georgia (c. 6000 BC),Iran (c. 5000 BC),Greece (c. 4500 BC) and Armenia (c. 4100 BC),where the oldest winery to date was uncovered.
-</p>
-    <h3>Prehistory</h3>
-    <p>The origins of wine predate written records, and modern archaeology is still uncertain about the details of the first cultivation of wild grapevines. It has been hypothesized that early humans climbed trees to pick berries, liked their sugary flavor, and then begun collecting them. After a few days with fermentation setting in, juice at the bottom of any container would begin producing low-alcohol wine. According to this theory, things changed around 10.000-8000 BC with the transition from a nomadic to a sedentism style of living, which led to agriculture and wine domestication.
-</p>
-    <h3>Oldest Winery Discovered</h3>
-    <p>The oldest-known winery was discovered in the "Areni-1" cave in Vayots Dzor, Armenia. Dated to c. 4100 BC, the site contained a wine press, fermentation vats, jars, and cups.Archaeologists also found V. vinifera seeds and vines. Commenting on the importance of the find, McGovern said, "The fact that winemaking was already so well developed in 4000 BC suggests that the technology probably goes back much earlier."<br>
-    This is what CNN wrote: "Forget France. It turns out, the real birthplace of wine may be in a cave in Armenia.
-    </p>
-    
-    </div>
-    </div>   
-    
+</nav> 
+
+<!-- END OF NAVBAR -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     
 </body>
