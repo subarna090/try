@@ -1,0 +1,33 @@
+#navbar{
+    position:absolute;
+    top:15px;
+    width:100%;
+    background:rgb(19,19,19);
+    border-color: rgb(19,19,19);
+}
+    
+
+hr.style15 {
+	border-top: 4px double #913f3f;
+	text-align: center;
+    width:80%;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #fff;
+	color: #913f3f;
+	font-size: 18px;
+}
+
+.btncolor{
+     background-color:#913f3f !important;
+     color: #fff !important;
+}
+
+#body{
+    
+}
