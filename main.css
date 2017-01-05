@@ -1,11 +1,20 @@
-#navbar{
+#navbar1{
     position:absolute;
     top:15px;
     width:100%;
     background:rgb(19,19,19);
     border-color: rgb(19,19,19);
+    
 }
     
+#main{
+    margin-bottom: 50px;
+}
+
+#middle{
+    margin-top:40px;
+    padding:10px;
+}
 
 hr.style15 {
 	border-top: 4px double #913f3f;
@@ -13,7 +22,8 @@ hr.style15 {
     width:80%;
 }
 hr.style15:after {
-	content: '\002665';
+	/*content: '\002665'; */
+    content:'\002668';
 	display: inline-block;
 	position: relative;
 	top: -15px;
@@ -23,11 +33,86 @@ hr.style15:after {
 	font-size: 18px;
 }
 
-.btncolor{
-     background-color:#913f3f !important;
-     color: #fff !important;
+.thumbnail .caption{
+    text-align: center;
+}
+.thumbborder{
+    border:3px solid #513c18 !important;
 }
 
-#body{
+.thumbimage{
+    padding:5px;
+}
+
+.btncolor{
+     background: -webkit-linear-gradient(#913f3f, #664C1E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#913f3f, #664C1E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#913f3f, #664C1E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#913f3f, #664C1E) !important; /* Standard syntax (must be last) */ 
+     color: #d6cfcf !important;
+}
+
+#footer{
+    background-color: #664C1E;
+    color:#aaa;
+    margin-top:30px;
+    padding-bottom: 30px;
+}
+h2{
+    color:#d6cfcf !important;
+}
+
+.widget{
+   padding:10px;
     
+}
+#company{
+    border-left: 2px solid;
+}
+
+#formbottom{
+    box-sizing: border-box;
+    background:#513c18;
+    padding:8px;
+    max-width: 400px;
+}
+.credits {
+  background: #1c1c1c;
+  border-top: 5px solid #191919;
+  padding: 1em 0;
+  color: #888;
+  line-height: 1.5em;
+}
+.wrapper{
+    margin:0;
+    padding:0;
+}
+
+#rowpad{
+    padding:8px;
+}
+#copyright{
+    display:inline-block;
+    
+}
+#tweet{
+    color:#913f3f;
+    float:right;
+    margin-right: 5px;
+}
+
+#facebook{
+    color:#913f3f;
+    float:right;
+    margin-right: 15px;
+}
+
+#social{
+    float:right;
+}
+#mycontri{
+    text-align: center;
+    line-height: 6px; 
+    margin-top:10px;
+    padding-bottom:px;
 }
